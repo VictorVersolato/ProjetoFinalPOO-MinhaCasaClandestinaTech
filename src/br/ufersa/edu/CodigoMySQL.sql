@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS tb_item_venda (
 -- Usuario gerente padrao -> login: poo   senha: melhormateria
 -- O hash é SHA-256("melhormateria") Ver classe AutenticacaoService para resgatar senhas hash.
 INSERT INTO tb_funcionario (nome, endereco, login, senha_hash, perfil)
-SELECT 'Administrador', 'Sede', 'admin',
+SELECT 'Administrador', 'Sede', 'poo',
        '35e46d4de53741ae5b75b947b5e2083170eceb9c7859e1e87316da4aeb58ab30', 'ADMIN'
 WHERE NOT EXISTS (SELECT 1 FROM tb_funcionario WHERE login = 'admin');
 
