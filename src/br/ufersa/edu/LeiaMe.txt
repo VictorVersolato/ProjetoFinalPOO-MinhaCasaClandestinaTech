@@ -1,0 +1,34 @@
+Projeto final da disciplina Programação Orientada a Objeto (1200505) T01
+Docente: Dr. Paulo Gadelha 
+Discente: Victor Versolato Soldo
+Tema: Minha Casa Clandestina Tech - Sistema de Controle de Estoque de Equipamentos de Informática 
+ 
+———————————————————————————
+
+USUÁRIO PADRÃO (primeiro acesso)
+     login: poo
+     senha: melhormateria
+Esse usuário tem perfil ADMIN e pode cadastrar novos funcionários pelo botão "Cadastrar Funcionario" da tela principal.
+
+Compilar e executar:
+   Coloque o driver .jar em uma pasta "lib" dentro de src e compile todos os arquivos. Rodar o Main para iniciar tela de login. 
+
+ESTRUTURA DO PROJETO
+   src/br/ufersa/edu/                Entidades: Cliente, Equipamento,Local, Responsável, Funcionário, Item, Venda, Compra, Movimentação, Main, LeiaMe.txt e Código MySQL.sql. 
+                            
+   src/br/ufersa/edu/model/          Classe abstrata Pessoa
+
+   src/br/ufersa/edu/exception/      
+Exceções próprias: Validacao, EstoqueInsuficiente,                                   Autenticacao. 
+
+   src/br/ufersa/edu/model/DAO/      
+Persistência: BaseDAO, AbstractDAO, DAOs,                                    SingletonConexao, DAOFactory, MySQLDAOFactory.
+
+   src/br/ufersa/edu/model/service/  
+Regras de negócio + SistemaFacade
+
+   src/br/ufersa/edu/view/           Interface gráfica Swing: login, painel principal, cadastros, relatorios. 
+
+TELAS IMPLEMENTADAS:
+Login (TelaLogin) - Painel principal com permissoes por perfil
+TelaPrincipal - CRUD de Clientes (PainelCliente), CRUD de Responsaveis (PainelResponsavel), CRUD de Locais (PainelLocal), CRUD de Equipamentos com pesquisa por nome (PainelEquipamento), Registro de Compras com itens (PainelCompra), Nota de Venda com itens, baixa de estoque e cancelamento (PainelVenda), Cadastro de Funcionarios -restrito ao ADMIN (DialogCadastroFuncionario), Relatorios de estoque, estoque critico e vendas por periodo (PainelRelatorios)
