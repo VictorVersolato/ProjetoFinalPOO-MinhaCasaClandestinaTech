@@ -14,7 +14,8 @@ Compilar e executar:
    Coloque o driver .jar em uma pasta "lib" dentro de src e compile todos os arquivos. Rodar o Main para iniciar tela de login. 
 
 ESTRUTURA DO PROJETO
-   src/br/ufersa/edu/                Entidades: Cliente, Equipamento,Local, Responsável, Funcionário, Item, Venda, Compra, Movimentação, Main, LeiaMe.txt e Código MySQL.sql. 
+   src/br/ufersa/edu/ 
+Entidades: Cliente, Equipamento,Local, Responsável, Funcionário, Item, Venda, Compra, Movimentação, Main, LeiaMe.txt e Código MySQL.sql. 
                             
    src/br/ufersa/edu/model/          Classe abstrata Pessoa
 
