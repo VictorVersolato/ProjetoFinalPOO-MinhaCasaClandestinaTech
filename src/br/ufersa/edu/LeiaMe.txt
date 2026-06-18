@@ -17,18 +17,20 @@ ESTRUTURA DO PROJETO
    src/br/ufersa/edu/ 
 Entidades: Cliente, Equipamento,Local, Responsável, Funcionário, Item, Venda, Compra, Movimentação, Main, LeiaMe.txt e Código MySQL.sql. 
                             
-   src/br/ufersa/edu/model/          Classe abstrata Pessoa
+   src/br/ufersa/edu/model/
+Classe abstrata Pessoa
 
-   src/br/ufersa/edu/exception/      
+   src/br/ufersa/edu/exception/
 Exceções próprias: Validacao, EstoqueInsuficiente,                                   Autenticacao. 
 
-   src/br/ufersa/edu/model/DAO/      
+   src/br/ufersa/edu/model/DAO/
 Persistência: BaseDAO, AbstractDAO, DAOs,                                    SingletonConexao, DAOFactory, MySQLDAOFactory.
 
-   src/br/ufersa/edu/model/service/  
+   src/br/ufersa/edu/model/service/
 Regras de negócio + SistemaFacade
 
-   src/br/ufersa/edu/view/           Interface gráfica Swing: login, painel principal, cadastros, relatorios. 
+   src/br/ufersa/edu/view/ 
+Interface gráfica Swing: login, painel principal, cadastros, relatorios. 
 
 TELAS IMPLEMENTADAS:
 Login (TelaLogin) - Painel principal com permissoes por perfil
